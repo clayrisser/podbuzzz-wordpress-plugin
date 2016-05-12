@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: jamrizzi
-Donate link: http://example.com/
+Donate link: https://jamrizzi.com/buy-me-coffee
 Tags: comments, spam
 Requires at least: 3.0.1
 Tested up to: 4.5
