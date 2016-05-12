@@ -1,0 +1,113 @@
+/* Major content sections */
+body {
+    margin-right: 20px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: left;
+    width: 50%;
+}
+
+/* Minor Sections */
+.minor-section {
+    padding-top: 30px;
+}
+.minor-section-title {
+    padding: 0px;
+    margin: 0px 0px 10px 0px;
+}
+
+/* Individual items */
+
+#podbuzzzImage {
+    width: 100%;
+    max-width: 450px;
+}
+
+#scriptInstalled {
+    padding: 10px;
+    background-color: lightsalmon;
+    margin: 0px;
+}
+
+#currentKey {
+    width: 100%;
+}
+
+#enabledSwitch {
+    float: left;
+    margin-right: 10px;
+}
+
+#enabledLabel {
+    margin-top: 8px;
+}
+
+#keyInput {
+    width: 100%;
+}
+
+#submitButtonContainer {
+    margin: auto;
+    width: 240px;
+}
+
+#submitButton {
+    width: 100%;
+    height: 40px;
+    background-color: #2196F3;
+}
+
+/* Slider Toggle */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}

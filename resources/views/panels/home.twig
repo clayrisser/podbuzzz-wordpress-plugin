@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PodBuzzz</title>
+    <link rel="stylesheet" type="text/css" href="{{ PodBuzzz.helper('assetUrl', 'css/home.css') }}" />
+</head>
+
+<body>
+
+    <div class="left">
+        <h1>PodBuzzz</h1>
+        <img id="podbuzzzImage" src="{{ PodBuzzz.helper('assetUrl', 'images/podbuzzz.png') }}" />
+    </div>
+
+    <div class="right">
+    
+        <div id="scriptStatusContainer" class="minor-section">
+            <h3 id="currentKeyLabel" class="minor-section-title">Status</h3>
+            <h4 id="scriptInstalled">Checking if the script is installed.</h4>
+        </div>
+    
+        <div id="currentKeyContainer" class="minor-section">
+            <h3 id="currentKeyLabel" class="minor-section-title">Current Key</h3>
+            <input type="textbox" id="currentKey" readonly="readonly"></input>
+        </div>
+    
+        <div id="enabledContainer" class="minor-section">
+            <div id="enabledSwitch">
+                <label class="switch">
+                    <input type="checkbox" id="podbuzzzScriptEnabled" onclick="enableScript()">
+                    <div class="slider"></div>
+                </label>
+            </div>
+            <h3 id="enabledLabel">Enabled</h3>
+        </div>
+        
+        
+        <div id="installWidgetContainer" class="minor-section">
+            <div id="submitButtonContainer">
+                <h3 class="minor-section-title"><button id="submitButton" onclick="updateKey()">Install My Widget</button></h3>
+            </div>
+            <div id="keyInputContainer">
+                <input type="textbox" id="keyInput"></input>
+            </div>
+            <div id="statusMessage"></div>
+        </div>
+        
+
+
+    </div>
+
+    <script type="text/javascript" src="{{ PodBuzzz.helper('assetUrl', 'js/home.js') }}"></script>
+</body>
+
+</html>
