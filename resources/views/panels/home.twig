@@ -9,21 +9,29 @@
 
 <body>
 
+    <h1 id="title">Ask Vistors for Podcast Reviews</h1>
+
     <div class="left">
-        <h1>PodBuzzz</h1>
         <img id="podbuzzzImage" src="{{ PodBuzzz.helper('assetUrl', 'images/podbuzzz.png') }}" />
     </div>
 
     <div class="right">
+
+        <h1 id="explaination">Increase your chances of getting listener feedback by including our free widget on your website!</h1>
+    
+        <div id="installWidgetContainer" class="minor-section">
+            <div id="keyInputContainer">
+                <input type="textbox" id="keyInput"></input>
+            </div>
+            <div id="submitButtonContainer">
+                <h3 class="minor-section-title"><button id="submitButton" onclick="updateKey()">Install My Widget</button></h3>
+            </div>
+        </div>    
+    
     
         <div id="scriptStatusContainer" class="minor-section">
             <h3 id="currentKeyLabel" class="minor-section-title">Status</h3>
-            <h4 id="scriptInstalled">Checking if the script is installed.</h4>
-        </div>
-    
-        <div id="currentKeyContainer" class="minor-section">
-            <h3 id="currentKeyLabel" class="minor-section-title">Current Key</h3>
-            <input type="textbox" id="currentKey" readonly="readonly"></input>
+            <h4 id="scriptInstalled">Checking if the script is installed...</h4>
         </div>
     
         <div id="enabledContainer" class="minor-section">
@@ -33,23 +41,12 @@
                     <div class="slider"></div>
                 </label>
             </div>
-            <h3 id="enabledLabel">Enabled</h3>
+            <h3 id="enabledLabel">Show Widget</h3>
         </div>
         
-        
-        <div id="installWidgetContainer" class="minor-section">
-            <div id="submitButtonContainer">
-                <h3 class="minor-section-title"><button id="submitButton" onclick="updateKey()">Install My Widget</button></h3>
-            </div>
-            <div id="keyInputContainer">
-                <input type="textbox" id="keyInput"></input>
-            </div>
-            <div id="statusMessage"></div>
-        </div>
-        
-
-
     </div>
+    
+    <div id="powered-by">Powered by <a href="https://www.podbuzzz.com">PodBuzzz</a></div>
 
     <script type="text/javascript" src="{{ PodBuzzz.helper('assetUrl', 'js/home.js') }}"></script>
 </body>

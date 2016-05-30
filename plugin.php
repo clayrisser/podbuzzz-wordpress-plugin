@@ -6,8 +6,8 @@
  * Plugin URI:        http://podbuzzz.com/
  * Description:       The official PodBuzzz WordPress plugin.
  * Version:           1.0.0
- * Author:            JamRizzi Technologies
- * Author URI:        http://jamrizzi.com/
+ * Author:            PodBuzzz.com
+ * Author URI:        https://www.podbuzzz.com
  * License:           GPLv3
  */
 

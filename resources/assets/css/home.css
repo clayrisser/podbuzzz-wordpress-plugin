@@ -1,6 +1,7 @@
 /* Major content sections */
 body {
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .left {
@@ -24,6 +25,22 @@ body {
 
 /* Individual items */
 
+#title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#explaination {
+  font-size: 23px;
+  line-height: 45px;
+  color: #5A5A5A;
+}
+
+#powered-by {
+  float: right;
+  padding-top: 40px;
+}
+
 #podbuzzzImage {
     width: 100%;
     max-width: 450px;
@@ -31,8 +48,9 @@ body {
 
 #scriptInstalled {
     padding: 10px;
-    background-color: lightsalmon;
+    background-color: rgba(0,0,0,0.3);
     margin: 0px;
+    text-align: center;
 }
 
 #currentKey {
@@ -49,6 +67,7 @@ body {
 }
 
 #keyInput {
+    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -60,7 +79,6 @@ body {
 #submitButton {
     width: 100%;
     height: 40px;
-    background-color: #2196F3;
 }
 
 /* Slider Toggle */

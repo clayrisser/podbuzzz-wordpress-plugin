@@ -1,30 +1,47 @@
-=== Plugin Name ===
-Contributors: jamrizzi
-Donate link: http://jamrizzi.com/buy-me-coffee
-Tags: comments, spam
-Requires at least: 3.0.1
+=== PodBuzzz ===
+Tags: podcasting, podcast, podcasts, podcast widget
+Contributors: PodBuzzz, JamRizzi
+Requires at least: 3.4
 Tested up to: 4.5
 Stable tag: 4.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is the The official PodBuzzz WordPress plugin. It automatically generates and places a tracking script on all of your pages based on your identification key.
 
 == Description ==
 
-This is the The official PodBuzzz WordPress plugin. It automatically generates and places a tracking script on all of your pages based on your identification key.
+Ask your audience to review your podcast when they're on your website. 
 
-Special thanks to the [Herbert](http://getherbert.com/) framework.
+When a podcast listener is on your website this widget allows you to unobtrusively ask your audience to rate your show 5 stars.     
+
+This widget will increase your chances of getting listener feedback at least 20%.
+
+Visit https://podbuzzz.com to learn more about how you can get notified of new iTunes reviews worldwide and this widget.
+
 
 == Installation ==
 
-Three easy installation steps.
+Four easy installation steps:
 
-1. Upload the plugin files to the `/wp-content/plugins/PodBuzzz` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress.
-3. Enter your key and activate the widget under Settings->PodBuzzz. 
+1. Get your widget key from the "Get Reviews Widget" page at PodBuzzz.com (https://podbuzzz.com/get_review_widget)
+2. Install the plugin through the WordPress plugins screen directly.
+3. Activate the plugin through the 'Plugins' screen in WordPress.
+4. Enter your key and activate the widget under Settings->PodBuzzz. 
+
 
 == Frequently Asked Questions ==
+
+= What does this plugin do? =
+
+When a podcast listener is on your website this widget allows you to unobtrusively ask your audience to rate your show 5 stars.     
+
+= How much more reviews could I get by installing this widget? =
+
+Based on our measurements and feedback from users-- around 20% more.
+
+= What is PodBuzzz? =
+
+PodBuzzz is a free service that tracks and analyzes your worldwide iTunes reviews. Get New review alerts, stats, and insights in your audience.
 
 = I got the following error: _Cannot check if script is installed without the PHP curl module._ =
 
@@ -36,15 +53,11 @@ sudo apt-get install php7.0-curl
 
 If you do not have control over your system, contact your admistrator and ask them to install curl.
 
-= What about foo bar? =
+== Upgrade Notice ==
 
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-We currently do not have any screenshots.
+ == Screenshots ==
 
 == Changelog ==
 
 = 1.0 =
-* Initial working version
+* Initial version

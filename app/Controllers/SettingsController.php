@@ -70,7 +70,7 @@ class SettingsController {
                 curl_close($curl);
                 // Determine if script is installed
                 if (strpos($htmlSource, '<script async src="https://www.podbuzzz.com/') > -1) { // Script installed
-                    $response->message = 'The script is installed.';
+                    $response->message = 'Your podcast widget is installed!';
                     $response->success = true;
                 } else { // Script not installed
                     $response->message = 'The script is not installed. Make sure you have a valid key and the plugin is enabled.';

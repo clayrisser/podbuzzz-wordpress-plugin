@@ -1,26 +1,31 @@
 var homeUrl = getHomeUrl();
 
 function updateKey() {
+
+  if (!confirm("In order to install this widget, please confirm that you are ok with the widget having a 'Powered By' link back to our site.")) {
+      alert('The widget will not be installed.')
+  }
+
   var request = new XMLHttpRequest();
   var key = document.getElementById('keyInput').value;
   request.open('POST', homeUrl + '/podbuzzz_api/key?key=' + key, true);
   request.onload = function () {
     if (request.status >= 200 && request.status < 400) { // Success!
       var resp = JSON.parse(request.responseText);
-      document.getElementById('statusMessage').innerHTML = resp.message;
+      //document.getElementById('statusMessage').innerHTML = resp.message;
       if (resp.success) { // Key successfully updated
         getKey();
         scriptInstalled();
       }
     } else { // We reached our target server, but it returned an error
       var error = 'PodBuzzz API returned an error.';
-      document.getElementById('statusMessage').innerHTML = error;
+      //document.getElementById('statusMessage').innerHTML = error;
       console.warn(error);
     }
   };
   request.onerror = function () { // There was a connection error of some sort
     var error = 'Could not connect to PodBuzzz API.';
-    document.getElementById('statusMessage').innerHTML = error;
+    //document.getElementById('statusMessage').innerHTML = error;
     console.warn(error);
   };
   request.send();
@@ -32,19 +37,19 @@ function getKey() {
   request.onload = function () {
     if (request.status >= 200 && request.status < 400) { // Success!
       var resp = JSON.parse(request.responseText);
-      document.getElementById('currentKey').value = resp.message;
+      //document.getElementById('currentKey').value = resp.message;
       if (resp.success) {
         document.getElementById('submitButton').innerHTML = 'Reinstall My Widget';
       }
     } else { // We reached our target server, but it returned an error
       var error = 'Connection Failed';
-      document.getElementById('currentKey').innerHTML = error;
+      //document.getElementById('currentKey').innerHTML = error;
       console.warn(error);
     }
   };
   request.onerror = function () { // There was a connection error of some sort
     var error = 'Connection Failed';
-    document.getElementById('currentKey').innerHTML = error;
+    //document.getElementById('currentKey').innerHTML = error;
     console.warn(error);
   };
   request.send();
@@ -60,7 +65,7 @@ function scriptInstalled() {
       if (resp.success) { // Key found
         document.getElementById('scriptInstalled').style.background = 'lightgreen';
       } else {
-        document.getElementById('scriptInstalled').style.background = 'lightsalmon';
+        //document.getElementById('scriptInstalled').style.background = 'lightsalmon';
       }
     } else { // We reached our target server, but it returned an error
       var error = 'PodBuzzz API returned an error.';
