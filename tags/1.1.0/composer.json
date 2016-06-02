@@ -1,0 +1,26 @@
+{
+    "name": "tareq1988/wordpress-settings-api-class",
+    "type": "library",
+    "description": "The official PodBuzzz WordPress plugin.",
+    "keywords": ["podcasting", "podcast", "podcasts", "podcast widget"],
+    "homepage": "https://wordpress.org/plugins/podbuzzz",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "PodBuzzz",
+            "homepage": "http://podbuzzz.com",
+            "role": "Owner"
+        },
+        {
+            "name": "JamRizzi",
+            "homepage": "http://jamrizzi.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.4"
+    },
+    "autoload": {
+        "classmap": ["classes/"]
+    }
+}

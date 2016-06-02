@@ -1,0 +1,14 @@
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: left;
+    width: 50%;
+}
+
+#podbuzzzImage {
+    width: 100%;
+    max-width: 450px;
+}
